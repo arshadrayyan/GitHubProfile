@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.github_profile.data.model.GHRepo
-import com.example.github_profile.domain.FetchGHReposUseCase
+import com.example.github_profile.presentation.domain.FetchGHReposUseCase
 import kotlinx.coroutines.launch
 
 // ViewModel interacts with the UseCase and provides data to the UI using LiveData.

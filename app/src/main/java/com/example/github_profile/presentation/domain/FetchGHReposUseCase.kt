@@ -1,4 +1,4 @@
-package com.example.github_profile.domain
+package com.example.github_profile.presentation.domain
 
 import com.example.github_profile.data.GHRepoRepository
 import com.example.github_profile.data.model.GHRepo

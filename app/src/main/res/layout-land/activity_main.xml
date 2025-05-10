@@ -6,20 +6,18 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Username Input -->
+    <!-- Username input and Search button in a horizontal chain -->
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Enter GitHub Username"
-        android:inputType="text"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnSearch"
+        app:layout_constraintEnd_toStartOf="@id/btnSearch"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         android:layout_marginEnd="8dp" />
 
-    <!-- Search Button -->
     <Button
         android:id="@+id/btnSearch"
         android:layout_width="wrap_content"
@@ -29,7 +27,7 @@
         app:layout_constraintStart_toEndOf="@id/etUsername"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Search Query Input -->
+    <!-- Search query input -->
     <EditText
         android:id="@+id/etSearchQuery"
         android:layout_width="0dp"
@@ -40,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="12dp" />
 
-    <!-- RecyclerView -->
+    <!-- RecyclerView showing list of repos -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvRepos"
         android:layout_width="0dp"
@@ -48,11 +46,10 @@
         app:layout_constraintTop_toBottomOf="@id/etSearchQuery"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/webView"
-        android:layout_marginEnd="8dp"
-        android:scrollbars="vertical" />
+        app:layout_constraintEnd_toStartOf="@id/webView"
+        android:layout_marginEnd="8dp" />
 
-    <!-- WebView -->
+    <!-- WebView to display repo URL -->
     <WebView
         android:id="@+id/webView"
         android:layout_width="0dp"
@@ -60,7 +57,5 @@
         app:layout_constraintTop_toTopOf="@id/rvRepos"
         app:layout_constraintBottom_toBottomOf="@id/rvRepos"
         app:layout_constraintStart_toEndOf="@id/rvRepos"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="#F2F2F2" />
-
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,7 @@ import com.example.github_profile.data.local.AppDatabase
 import com.example.github_profile.data.local.GHRepoLocalDataSource
 import com.example.github_profile.data.remote.GHRepoRemoteDataSource
 import com.example.github_profile.data.remote.NetworkService
-import com.example.github_profile.domain.FetchGHReposUseCase
+import com.example.github_profile.presentation.domain.FetchGHReposUseCase
 import com.example.github_profile.presentation.adapter.GHRepoAdapter
 import com.example.github_profile.presentation.viewmodel.GHRepoViewModel
 
